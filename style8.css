@@ -1,0 +1,18 @@
+nav {
+    height: 80px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+.box {
+    display: flex;
+    justify-content: center;
+
+}
+
+.img1 {
+background-image: url('https://images.app.goo.gl/1q5ecnd9G95nQ4vr6');
+position: relative;
+}
