@@ -7,46 +7,44 @@ nav {
     align-items: center;
   }
 .box {
-    display: flex;
-    justify-content: center;
-
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    max-height: 250px;
+    max-width: 250px;
 }
 
-.img1 {
-    background-image: url('https://images.app.goo.gl/1q5ecnd9G95nQ4vr6');
+.image {
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
-.img2 {
-    background-image: url('https://images.app.goo.gl/g5pJ5SU6MC8aJDqU6');
-}
-
-.img3 {
-    background-image: url('https://images.app.goo.gl/9U45GAwJ3VC6MPWz9');
-}
-
-.img1, .img2, .img3 {
-    display:  block;
-    width: 200px;
-    height: 200px;
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;opacity:0.8;
+    
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .box:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
     color: white;
     font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.overlay {
-    position: absolute;
-    background-color: gray;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-    
-}
-
-.box:hover, .overlay {
-    height: 100%;
-}
-
+  }
