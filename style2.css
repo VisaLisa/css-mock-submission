@@ -1,3 +1,11 @@
+nav {
+    height: 80px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 body {
     margin: 0;
     border: 5px solid black;
@@ -30,11 +38,4 @@ body {
     right: 0px;
     background-color: blue;
   }
-  nav {
-    height: 80px;
-    background-color: #eee;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+  
